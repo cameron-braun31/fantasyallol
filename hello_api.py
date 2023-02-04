@@ -1,6 +1,7 @@
 import requests
 import json
 import pprint
+from api_token import api_token
 
 
 url = "https://league-of-legends-esports.p.rapidapi.com/teams"
@@ -8,7 +9,7 @@ url = "https://league-of-legends-esports.p.rapidapi.com/teams"
 querystring = {"id":"lng-esports"}
 
 headers = {
-	"X-RapidAPI-Key": "f17f752696mshe5a0346a1f5d235p144ee1jsn119edc9739cb",
+	"X-RapidAPI-Key": api_token,
 	"X-RapidAPI-Host": "league-of-legends-esports.p.rapidapi.com"
 }
 
